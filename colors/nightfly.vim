@@ -990,6 +990,8 @@ if has('nvim')
     exec 'highlight BufferInactiveSign guibg=' . s:slate_blue . ' guifg=' . s:cadet_blue
 
     " nvim-cmp plugin
+    highlight! link CmpItemAbbrDefault NightflyWhite
+    exec 'highlight CmpItemAbbrDeprecatedDefault guifg=' . s:white . ' gui=strikethrough'
     highlight! link CmpItemAbbrMatch NightflyTan
     highlight! link CmpItemAbbrMatchFuzzy NightflyOrange
     highlight! link CmpItemKindDefault NightflyWhite
